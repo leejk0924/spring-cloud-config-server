@@ -25,3 +25,7 @@ config-repo/
 - /config/serviceA/default: serviceA.yml과 application.yml을 불러옴
 - /config/serviceA/dev: serviceA-dev.yml, serviceA.yml, application-dev.yml, application.yml을 불러옴
 - /config/serviceB/prod: serviceB-prod.yml, serviceB.yml, application-prod.yml, application.yml을 불러옴
+
+# Reference
+- https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_quick_start
+- https://mangkyu.tistory.com/253
