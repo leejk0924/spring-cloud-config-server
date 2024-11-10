@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/leejk0924/spring-cloud-config.git
+          username:
+          password:
+          search-paths: amazon2
+          default-label: main
+          ignore-local-ssh-settings: true
+server:
+  port: 8888
