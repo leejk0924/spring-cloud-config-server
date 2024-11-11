@@ -29,3 +29,4 @@ config-repo/
 # Reference
 - https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_quick_start
 - https://mangkyu.tistory.com/253
+- https://madplay.github.io/post/introduction-to-spring-cloud-config
