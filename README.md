@@ -2,6 +2,13 @@
 
 ## usage
 
+### Docker Image 생성 방법
+Google Jib 을 사용하여 dockerfile 없이 Docker의 컨테이너 이미지 생성한다.
+Docker 이미지 생성은 아래의 명령어를 통해 할 수 있다.
+```text
+./gradlew jibDockerBuild 
+```
+
 ### 파일명 규칙
 파일명은 일반적으로 아래의 형식을 따른다.
 ```
