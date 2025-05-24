@@ -2,10 +2,25 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.0.8'
     id 'io.spring.dependency-management' version '1.1.6'
+    id 'com.google.cloud.tools.jib' version '3.4.1'
 }
 
 group = 'com.jk'
 version = '0.0.1-SNAPSHOT'
+
+jib {
+    from {
+        image = 'openjdk:21-jdk-slim'
+    }
+    to {
+        image = 'spring-cloud-config-server2'
+    }
+    container {
+        creationTime = 'USE_CURRENT_TIMESTAMP'
+        mainClass = 'org.springframework.boot.loader.JarLauncher'
+        ports = ['8888']
+    }
+}
 
 java {
     toolchain {
