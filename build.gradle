@@ -10,21 +10,21 @@ version = '0.0.1-SNAPSHOT'
 
 jib {
     from {
-        image = 'openjdk:21-jdk-slim'
+        image = 'openjdk:17-jdk-slim'
     }
     to {
-        image = 'spring-cloud-config-server2'
+        image = 'spring-config-server'
     }
     container {
         creationTime = 'USE_CURRENT_TIMESTAMP'
-        mainClass = 'org.springframework.boot.loader.JarLauncher'
+        mainClass = 'com.jk.springcloudconfigserver.SpringCloudConfigServerApplication'
         ports = ['8888']
     }
 }
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
